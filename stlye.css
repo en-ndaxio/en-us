@@ -1,0 +1,270 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: #0b0721;
+    line-height: 1.6;
+}
+
+.content{
+    padding: 5vh 5vh;
+}
+
+/* Header */
+.header {
+    background: #0b0721;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    border-bottom: 2px solid #26292f;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+}
+
+.auth .login,
+.auth .signup {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.auth .signup {
+    background: #4c3cff;
+    border: none;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(135deg, #0b0721, #170f3a);
+    height: 80vh;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.hero-content p {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #c2c5cc;
+}
+
+.hero-content .cta {
+    padding: 0.8rem 2rem;
+    background: #58ff7f;
+    border: none;
+    font-size: 1rem;
+    color: #0b0721;
+    cursor: pointer;
+}
+
+.crypto-stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.crypto {
+    background: #1a1335;
+    margin: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    width: 180px;
+}
+
+.crypto span {
+    display: block;
+}
+
+.crypto .up {
+    color: #4ff58e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
+    .auth {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .crypto {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}
+/* Social Media Section */
+.social-media-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+}
+
+.social-icons li {
+    display: inline-block;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #aaa; /* Default color */
+    font-size: 18px; /* Icon size */
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff; /* Hover color */
+    transform: scale(1.2); /* Slight zoom on hover */
+}
+
+/* Bottom Footer */
+.bottom-footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #333; /* Subtle top border */
+    color: #aaa;
+    font-size: 14px;
+}
+
+.bottom-footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .social-icons {
+        gap: 10px; /* Reduce space on smaller screens */
+    }
+
+    .social-icons a {
+        font-size: 16px; /* Adjust icon size for smaller screens */
+    }
+}
+/* Blog Section Styles */
+.blog-section {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .blog-post {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .blog-post:hover {
+    transform: translateY(-5px);
+  }
+  
+  .blog-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .post-title {
+    font-size: 1.8rem;
+    margin: 20px;
+    color: #333;
+  }
+  
+  .post-summary {
+    font-size: 1rem;
+    color: #555;
+    margin: 0 20px 20px;
+  }
+  
+  .read-more {
+    display: inline-block;
+    margin: 0 20px 20px;
+    font-weight: bold;
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .read-more:hover {
+    color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .post-title {
+      font-size: 1.5rem;
+    }
+  
+    .post-summary {
+      font-size: 0.9rem;
+    }
+  }
+  
